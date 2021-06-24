@@ -60,9 +60,7 @@ function App() {
         <Router>
             <div >
                 <Navbar noOfdataInCart={cart.length} />
-
                 <Searchbar handleSearchData={handleSearchData} />
-
                 <Switch>
                     <Route exact path="/">
                         <AllProducts search={data} onAddToCart={handleAddToCart} products={products} />
